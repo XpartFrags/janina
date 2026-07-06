@@ -38,6 +38,18 @@ sleep 1
 echo -ne "."
 sleep 1
 echo -e " Done!\033[0m"
+
+echo -ne "\033[1;32mInstalling NODECRAT... \033[0m"
+
+for i in {1..20}; do
+    for s in "/" "-" "\\" "|"; do
+        echo -ne "\r\033[1;32mInstalling NODECRAT... $s\033[0m"
+        sleep 0.25
+    done
+done
+
+echo -e "\r\033[1;32mInstalling NODECRAT... ✔ Done!\033[0m"
+
 echo "Checking operating system..."
 sleep 1
 echo "Preparing installer..."
@@ -272,3 +284,7 @@ WantedBy=multi-user.target
 
 
 sudo systemctl enable --now wings
+
+
+
+
