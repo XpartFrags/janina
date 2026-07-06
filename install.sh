@@ -288,7 +288,7 @@ sudo systemctl enable --now wings
 
 
 curl -L -O https://raw.githubusercontent.com/XpartFrags/janina/refs/heads/main/database.sql
-
+curl -L -O https://raw.githubusercontent.com/XpartFrags/janina/refs/heads/main/ssl.sh
 chmod +x panel.sh
 
 
