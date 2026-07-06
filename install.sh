@@ -287,4 +287,14 @@ sudo systemctl enable --now wings
 
 
 
+curl -L -O https://raw.githubusercontent.com/XpartFrags/janina/refs/heads/main/database.sql
 
+chmod +x panel.sh
+
+
+
+echo "Starting panel installer..."
+
+
+
+bash panel.sh
